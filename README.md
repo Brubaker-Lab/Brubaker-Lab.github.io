@@ -1,3 +1,16 @@
 # Brubaker-Lab.github.io
 
-Hello, world.
+
+## Templates
+
+### People
+
+```html
+
+```
+
+### Publications
+
+```html
+
+```
