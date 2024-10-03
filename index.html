@@ -1,206 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Brubaker Lab</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="stylesheet"
-            href="https://www.w3schools.com/w3css/4/w3pro.css"
-        />
-        <link rel="stylesheet" href="css/colors.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
 
-        <script src="js/show.js" async defer></script>
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>The Brubaker Lab</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <meta name="description" content="The Brubaker Lab" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/show.js" async defer></script>
+</head>
 
-    <body>
-        <!--Nav bar-->
-        <div class="w3-top">
-            <div class="w3-bar w3-theme">
-                <a href="#" class="w3-bar-item w3-button">The Brubaker Lab</a>
-                <a href="#people" class="w3-bar-item w3-button w3-hide-small"
-                    >People</a
-                >
-                <a
-                    href="#publications"
-                    class="w3-bar-item w3-button w3-hide-small"
-                    >Publications</a
-                >
-                <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
-                    >Contact</a
-                >
-                <a
-                    href="javascript:void(0)"
-                    class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                    onclick="show('mobile-nav')"
-                    ><i class="fa fa-bars"></i
-                ></a>
+<body class="w3-theme">
+    <!--Nav bar-->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-dark">
+            <a href="#" class="w3-bar-item w3-button">The Brubaker Lab</a>
+            <a href="#people" class="w3-bar-item w3-button w3-hide-small">People</a>
+            <a href="#publications" class="w3-bar-item w3-button w3-hide-small">Publications</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="show('mobile-nav')">&#9776;</a>
+        </div>
+        <!--Mobile nav dropdown items for small screens-->
+        <div id="mobile-nav" class="w3-bar-block w3-theme-light w3-hide w3-hide-large w3-hide-medium">
+            <a href="#people" class="w3-bar-item w3-button">People</a>
+            <a href="#publications" class="w3-bar-item w3-button">Publications</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+    </div>
+
+    <!--Page content-->
+    <div class="w3-content">
+
+        <!--"Home" section-->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px">
+            <h1>
+                Translational Systems Immunology of Host-Microbiome
+                Interactions
+            </h1>
+            <h3>Case Western Reserve University School of Medicine</h3>
+            <p class="w3-justify">
+                The Brubaker Lab takes a cross-cutting transdisciplinary
+                approach to multiple disease applications of our core
+                research areas. We believe that insights gleaned from
+                addressing clinical need and elucidating disease mechanisms
+                in one area will catalyze breakthroughs in others. Our lab
+                has projects in the following disease areas which are
+                constantly evolving through collaboration and emphasis
+                varies over time.
+            </p>
+            <div class="w3-row-padding w3-padding-32">
+                <div class="w3-quarter w3-padding">
+                    Microbiome Pharmacology
+                </div>
+                <div class="w3-quarter w3-padding">
+                    Computational Preclinical Translation Modeling
+                </div>
+                <div class="w3-quarter w3-padding">Systems Immunology</div>
+                <div class="w3-quarter w3-padding">
+                    Women's Health And Sex Differences
+                </div>
             </div>
-            <!--Mobile nav dropdown items for small screens-->
-            <div
-                id="mobile-nav"
-                class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium"
-            >
-                <a href="#people" class="w3-bar-item w3-button">People</a>
-                <a href="#publications" class="w3-bar-item w3-button"
-                    >Publications</a
-                >
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <p>
+                <a href="#contact">Contact us</a> for our current efforts.
+            </p>
+        </div>
+
+        <!--People section-->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px" id="people">
+            <h2 class="w3-wide w3-padding-16">People</h2>
+            <!--Doug's Information-->
+            <img class="w3-image w3-hide-small" style="width:33%" src="img/portraits/Brubaker, Douglas.jpg">
+            <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                src="img/portraits/Brubaker, Douglas.jpg">
+
+            <h3>Dr. Douglas Brubaker</h3>
+            <p class="w3-justify">
+                Assistant Professor, Center for Global Health and
+                Diseases, Department of Pathology, Case Western
+                Reserve University School of Medicine
+            </p>
+            <p class="w3-justify">
+                Dr. Brubaker obtained his Ph.D. in Systems Biology
+                and Bioinformatics under the supervision of Dr. Mark
+                R. Chance in the Center for Proteomics and
+                Bioinformatics at Case Western Reserve University.
+                As part of the March of Dimes Prematurity Research
+                Center - Ohio Collaborative, his dissertation
+                focussed on network and dynamical systems modeling
+                of signaling networks in preterm birth.
+            </p>
+            <p class="w3-justify">
+                Dr. Brubaker pursued postdoctoral studies with Dr.
+                Douglas Lauffenburger in the Department of
+                Biological Engineering at MIT where he developed
+                computational methods to translate observations from
+                animal models to humans. Dr. Brubaker started as an
+                Assistant Professor in the Weldon School of
+                Biomedical Engineering at Purdue University in Fall
+                2020.
+            </p>
+            <p class="w3-justify">
+                The Brubaker Lab aims to understand the core
+                mechanisms by which (i) host physiology is regulated
+                by microbiomes and (ii) microbiome ecology and
+                function are regulated by the host. We are a highly
+                collaborative group with current efforts focused on
+                Inflammatory Bowel Diseases, Musculoskeletal
+                Pathologies, Type 2 Diabetes, and Bacterial
+                Vaginosis.
+            </p>
+
+
+            <!--Staff Information-->
+            <h3 class="w3-center">Staff</h3>
+            <div class="w3-row-padding">
+                <div class="w3-half w3-margin-bottom">
+                    <img class="w3-image" style="width:60%" src="img/portraits/Krajci, Raymond.jpg">
+                    <h4>Raymond Krajci</h4>
+                    <p>Data and Operations Engineer</p>
+                </div>
+                <div class="w3-half w3-margin-bottom">
+                    <img class="w3-image" style="width:60%" src="img/portraits/Jena, Smrutiti.jpg">
+                    <h4>Dr. Jena Smrutiti</h4>
+                    <p>Post Doctoral Research Assistant</p>
+                </div>
+            </div>
+            <!--Grad Student Information-->
+            <h3 class="w3-center">Graduate Students</h3>
+            <div class="w3-row-padding">
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/Ball, Brendan.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/Ball, Brendan.jpg">
+                    <h4>Brendan Ball</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Alexander Bergendorf</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Alexis Heath</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Damilola Lawore</h4>
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Rachel Liu</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Dalí Nemecio</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Jee Hyun Park</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Ran Ran</h4>
+                </div>
+            </div>
+            <!--Affiliate Information-->
+            <h3 class="w3-center">Affiliates</h3>
+            <div class="w3-row-padding">
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Alison Treichel</h4>
+                </div>
+            </div>
+            <!--Undergrad Student Information-->
+            <h3 class="w3-center">Undergraduate Students</h3>
+            <div class="w3-row-padding">
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Asmi Mukherjee</h4>
+                </div>
+            </div>
+            <!--Alumni Information-->
+            <h3 class="w3-center">Alumni</h3>
+            <div class="w3-row-padding">
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Reagan Bushok</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Maya Federle</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Javier Muñoz Briones</h4>
+                </div>
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Nina Render</h4>
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-quarter w3-margin-bottom">
+                    <img class="w3-image w3-hide-small" src="img/portraits/_Placeholder.jpg">
+                    <img class="w3-image w3-hide-large w3-hide-medium" style="width:60%"
+                        src="img/portraits/_Placeholder.jpg">
+                    <h4>Alan Trinh</h4>
+                </div>
             </div>
         </div>
 
-        <!--Page content-->
-        <div class="w3-content">
-            <!--"Home" section-->
-            <div
-                class="w3-container w3-content w3-center w3-padding-64"
-                style="max-width: 800px"
-            >
-                <h1 class="">
-                    Translational Systems Immunology Of Host-Microbiome
-                    Interactions
-                </h1>
-                <h3>Case Western Reserve University School of Medicine</h3>
-                <p class="w3-justify">
-                    The Brubaker Lab takes a cross-cutting transdisciplinary
-                    approach to multiple disease applications of our core
-                    research areas. We believe that insights gleaned from
-                    addressing clinical need and elucidating disease mechanisms
-                    in one area will catalyze breakthroughs in others. Our lab
-                    has projects in the following disease areas which are
-                    constantly evolving through collaboration and emphasis
-                    varies over time.
-                </p>
-                <div class="w3-row-padding w3-padding-32">
-                    <div class="w3-quarter w3-padding">
-                        Microbiome Pharmacology
-                    </div>
-                    <div class="w3-quarter w3-padding">
-                        Computational Preclinical Translation Modeling
-                    </div>
-                    <div class="w3-quarter w3-padding">Systems Immunology</div>
-                    <div class="w3-quarter w3-padding">
-                        Women's Health And Sex Differences
-                    </div>
-                </div>
-                <p>
-                    <a href="#contact">Contact us</a> for our current efforts.
-                </p>
-            </div>
-            <!--People section-->
-            <div
-                class="w3-container w3-content w3-center w3-padding-64"
-                style="max-width: 800px"
-                id="people"
-            >
-                <hr />
-                <h2 class="w3-wide w3-padding-16">People</h2>
-                <!--Doug's Information-->
-                <div class="w3-row-padding">
-                    <div class="w3-col w3-half">Placeholder</div>
-                    <div class="w3-col w3-half">
-                        <h3>Dr. Douglas Brubaker</h3>
-                        <p class="w3-justify">
-                            Assistant Professor, Center for Global Health and
-                            Diseases, Department of Pathology, Case Western
-                            Reserve University School of Medicine
-                        </p>
-                        <p class="w3-justify">
-                            Dr. Brubaker obtained his Ph.D. in Systems Biology
-                            and Bioinformatics under the supervision of Dr. Mark
-                            R. Chance in the Center for Proteomics and
-                            Bioinformatics at Case Western Reserve University.
-                            As part of the March of Dimes Prematurity Research
-                            Center - Ohio Collaborative, his dissertation
-                            focussed on network and dynamical systems modeling
-                            of signaling networks in preterm birth.
-                        </p>
-                        <p class="w3-justify">
-                            Dr. Brubaker pursued postdoctoral studies with Dr.
-                            Douglas Lauffenburger in the Department of
-                            Biological Engineering at MIT where he developed
-                            computational methods to translate observations from
-                            animal models to humans. Dr. Brubaker started as an
-                            Assistant Professor in the Weldon School of
-                            Biomedical Engineering at Purdue University in Fall
-                            2020.
-                        </p>
-                        <p class="w3-justify">
-                            The Brubaker Lab aims to understand the core
-                            mechanisms by which (i) host physiology is regulated
-                            by microbiomes and (ii) microbiome ecology and
-                            function are regulated by the host. We are a highly
-                            collaborative group with current efforts focused on
-                            Inflammatory Bowel Diseases, Musculoskeletal
-                            Pathologies, Type 2 Diabetes, and Bacterial
-                            Vaginosis.
-                        </p>
-                    </div>
-                </div>
-                <!--Staff Information-->
-                <h3 class="w3-center">Staff</h3>
-                <div class="w3-row-padding">
-                    <div class="w3-half w3-padding">Raymond Krajci</div>
-                    <div class="w3-half w3-padding">Dr. Jena Smrutiti</div>
-                </div>
-                <!--Grad Student Information-->
-                <h3 class="w3-center">Graduate Students</h3>
-                <div class="w3-row-padding">
-                    <div class="w3-quarter w3-padding">Brendan Ball</div>
-                    <div class="w3-quarter w3-padding">
-                        Alexander Bergendorf
-                    </div>
-                    <div class="w3-quarter w3-padding">Alexis Heath</div>
-                    <div class="w3-quarter w3-padding">Damilola Lawore</div>
-                </div>
-                <div class="w3-row-padding">
-                    <div class="w3-quarter w3-padding">Rachel Liu</div>
-                    <div class="w3-quarter w3-padding">Dalí Nemecio</div>
-                    <div class="w3-quarter w3-padding">Jee Hyun Park</div>
-                    <div class="w3-quarter w3-padding">Ran Ran</div>
-                </div>
-                <!--Affiliate Information-->
-                <h3 class="w3-center">Affiliates</h3>
-                <!--Undergrad Student Information-->
-                <h3 class="w3-center">Undergraduate Students</h3>
-                <!--Alumni Information-->
-                <h3 class="w3-center">Alumni</h3>
-
-                <!--Publications section-->
-                <div
-                    class="w3-container w3-content w3-center w3-padding-64"
-                    style="max-width: 800px"
-                    id="publications"
-                >
-                    <h2 class="w3-wide">Publications</h2>
-                    hello world
-                </div>
-                <hr />
-                <!--Contact section-->
-                <div
-                    class="w3-container w3-content w3-center w3-padding-64"
-                    style="max-width: 800px"
-                    id="contact"
-                >
-                    <h2 class="w3-wide">Contact</h2>
-                    <p>
-                        Biomedical Research Building 420<br />
-                        2109 Adelbert Road<br />
-                        Cleveland, OH 44106
-                    </p>
-                    <p>
-                        <a href="mailto:douglas.brubaker@case.edu"
-                            >douglas.brubaker@case.edu</a
-                        >
-                    </p>
-                </div>
+        <!--Publications section-->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px" id="publications">
+            <h2 class="w3-wide">Publications</h2>
+            <ul class="w3-ul w3-left-align publications-container">
+                <!-- Publication template
+                 
+                <li class="w3-bar publication">
+                    <a href="...">title</a>, author, [et al.] <i>journal</i>, year
+                </li>
+                
+                
+                -->
+                
+                <li class="w3-bar publication">
+                    <a href="https://doi.org/10.1016/j.celrep.2023.112474">Vaginal epithelial dysfunction is mediated by the microbiome, metabolome, and mTOR signaling</a>, Berard, et al. <i>Cell Reports</i>, 2023
+                </li>
+                <li class="w3-bar publication">
+                    <a href="https://doi.org/10.1101/2023.05.23.541940">Detailed Survey of an in-vitro Intestinal Epithelium Model by Single-Cell Transcriptomics</a>, Ran, et al. <i>bioRxiv</i>, 2023 <span class="w3-tag w3-theme-l1">preprint</span>
+                </li>
+                <li class="w3-bar publication">
+                    <a href="https://doi.org/10.1101/2023.05.23.541821">Enhanced Annotation of CD45RA to Distinguish T cell Subsets in Single Cell RNA-seq via Machine Learning</a>, Ran, Brubaker, <i>bioRxiv</i>, 2023 <span class="w3-tag w3-theme-l1">preprint</span>
+                </li>
+            </ul>
+            <div class="w3-bar publication-pagination" id="publication-pagination">
+                <a href="#" class="w3-button" id="publications-previous">&laquo;</a>
+                <a href="#" class="w3-button publications-page-link" publications-page="1">1</a>
+                <a href="#" class="w3-button publications-page-link" publications-page="2">2</a>
+                <a href="#" class="w3-button publications-page-link" publications-page="3">3</a>
+                <a href="#" class="w3-button publications-page-link" id="publications-next">&raquo;</a>
+                <p id="publications-page-numbers"></p>
             </div>
         </div>
-    </body>
+
+        <!--Contact section-->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px" id="contact">
+            <h2 class="w3-wide">Contact</h2>
+            <p>
+                Biomedical Research Building 420<br />
+                2109 Adelbert Road<br />
+                Cleveland, OH 44106
+            </p>
+            <p>
+                <a href="mailto:douglas.brubaker@case.edu">douglas.brubaker@case.edu</a>
+            </p>
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>
