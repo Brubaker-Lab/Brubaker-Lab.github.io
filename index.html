@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/show.js" async defer></script>
+    <script src="js/publications-pagination.js" async defer></script>
 </head>
 
 <body class="w3-theme">
@@ -245,7 +246,7 @@
         <!--Publications section-->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px" id="publications">
             <h2 class="w3-wide">Publications</h2>
-            <ul class="w3-ul w3-left-align publications-container">
+            <ul class="w3-ul w3-left-align" id="publications-container">
                 <!-- Publication template
                  
                 <li class="w3-bar publication">
@@ -253,28 +254,28 @@
                 </li>
                 
                 -->
-                <li class="publication">
+                <li class="publication w3-hide">
                     <p><a href="https://doi.org/10.1016/j.celrep.2023.112474">Vaginal epithelial dysfunction is mediated
                             by the microbiome, metabolome, and mTOR signaling</a>, Berard, et al. <i>Cell Reports</i>,
                         2023</p>
                 </li>
-                <li class="publication">
+                <li class="publication w3-hide">
                     <p><a href="https://doi.org/10.1101/2023.05.23.541940">Detailed Survey of an in-vitro Intestinal
                             Epithelium Model by Single-Cell Transcriptomics</a>, Ran, et al. <i>bioRxiv</i>, 2023 <span
                             class="w3-tag w3-theme-l1">preprint</span></p>
                 </li>
-                <li class="publication">
+                <li class="publication w3-hide">
                     <p><a href="https://doi.org/10.1101/2023.05.23.541821">Enhanced Annotation of CD45RA to Distinguish
                             T cell Subsets in Single Cell RNA-seq via Machine Learning</a>, Ran, Brubaker,
-                        <i>bioRxiv</i>, 2023 <span class="w3-tag w3-theme-l1">preprint</span></p>
+                        <i>bioRxiv</i>, 2023 <span class="w3-tag w3-theme-l1">preprint</span>
+                    </p>
                 </li>
             </ul>
-            <div class="w3-bar publication-pagination" id="publication-pagination">
-                <a href="#" class="w3-button" id="publications-previous">&laquo;</a>
+            <div class="w3-bar" id="publications-pagination" id="publication-pagination">
+                <a onclick="prevPage()" class="w3-button" id="publications-prev">&laquo;</a>
                 <a href="#" class="w3-button publications-page-link" publications-page="1">1</a>
                 <a href="#" class="w3-button publications-page-link" publications-page="2">2</a>
-                <a href="#" class="w3-button publications-page-link" publications-page="3">3</a>
-                <a href="#" class="w3-button publications-page-link" id="publications-next">&raquo;</a>
+                <a onclick="nextPage()" class="w3-button" id="publications-next">&raquo;</a>
                 <p id="publications-page-numbers"></p>
             </div>
         </div>
