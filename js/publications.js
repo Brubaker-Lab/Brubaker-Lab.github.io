@@ -1,11 +1,11 @@
-//script.js adapted from https://www.geeksforgeeks.org/create-a-pagination-using-html-css-and-javascript/
-const publicationsPerPage = 2; // Number of cards to show per page 
+//Pagination code adapted from https://www.geeksforgeeks.org/create-a-pagination-using-html-css-and-javascript/
+const publicationsPerPage = 5; // Number of cards to show per page 
 const dataContainer = document.getElementById('publications-container');
 const pagination = document.getElementById('publications-pagination');
 const prevButton = document.getElementById('publications-prev');
 const nextButton = document.getElementById('publications-next');
 const pageNumbers = document.getElementById('publications-page-numbers');
-const pageLinks = document.querySelectorAll('.publications-page-link');
+const pageLinks = document.querySelectorAll('.publications-page-link');  
 
 const publications =
     Array.from(dataContainer.getElementsByClassName('publication'));
@@ -13,7 +13,6 @@ const publications =
 // Calculate the total number of pages 
 const totalPages = Math.ceil(publications.length / publicationsPerPage);
 let currentPage = 1;
-
 
 // Function to display cards for a specific page 
 function displayPage(page) {
@@ -32,26 +31,8 @@ function displayPage(page) {
 
 // Function to update pagination buttons and page numbers 
 function updatePagination() {
-
-    console.log(currentPage)
-
     pageNumbers.textContent =
         `Page ${currentPage} of ${totalPages}`;
-
-    if (currentPage === 1) {
-        prevButton.className += " w3-disabled"
-    }
-    if (currentPage === totalPages) {
-        nextButton.className += " w3-disabled"
-    }
-
-    if (currentPage > 1) {
-        prevButton.className = prevButton.className.replace(" w3-disabled", "")
-    }
-
-    if (currentPage < totalPages) {
-        nextButton.className = nextButton.className.replace(" w3-disabled", "")
-    }
 
     pageLinks.forEach((link) => {
         const page = parseInt(link.getAttribute('publications-page'));

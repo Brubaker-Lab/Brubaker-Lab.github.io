@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/w3pro.css" />
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/show.js" async defer></script>
-    <script src="js/publications-pagination.js" async defer></script>
+    <script src="js/papaparse.min.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/publications.js" async defer></script>
 </head>
 
 <body class="w3-theme">
@@ -247,34 +248,48 @@
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px" id="publications">
             <h2 class="w3-wide">Publications</h2>
             <ul class="w3-ul w3-left-align" id="publications-container">
-                <!-- Publication template
-                 
-                <li class="w3-bar publication">
-                    <a href="...">title</a>, author, [et al.] <i>journal</i>, year
-                </li>
-                
-                -->
-                <li class="publication w3-hide">
-                    <p><a href="https://doi.org/10.1016/j.celrep.2023.112474">Vaginal epithelial dysfunction is mediated
-                            by the microbiome, metabolome, and mTOR signaling</a>, Berard, et al. <i>Cell Reports</i>,
-                        2023</p>
-                </li>
-                <li class="publication w3-hide">
-                    <p><a href="https://doi.org/10.1101/2023.05.23.541940">Detailed Survey of an in-vitro Intestinal
-                            Epithelium Model by Single-Cell Transcriptomics</a>, Ran, et al. <i>bioRxiv</i>, 2023 <span
-                            class="w3-tag w3-theme-l1">preprint</span></p>
-                </li>
-                <li class="publication w3-hide">
-                    <p><a href="https://doi.org/10.1101/2023.05.23.541821">Enhanced Annotation of CD45RA to Distinguish
-                            T cell Subsets in Single Cell RNA-seq via Machine Learning</a>, Ran, Brubaker,
-                        <i>bioRxiv</i>, 2023 <span class="w3-tag w3-theme-l1">preprint</span>
-                    </p>
-                </li>
+
+<!-- INSERT PUBLICATION HTML BELOW -->
+
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1016/j.isci.2024.109383'>Detailed survey of an in vitro intestinal epithelium model by single-cell transcriptomics</a>, Ran, Ran; Muñoz Briones, Javier; Jena, Smrutiti; Anderson, Nicole L.; Olson, Matthew R.; Green, Leopold N.; Brubaker, Douglas K., <i>iScience</i>, 2024</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1038/s41598-024-62155-3'>Differential responses of primary neuron-secreted MCP-1 and IL-9 to type 2 diabetes and Alzheimer’s disease-associated metabolites</a>, Ball, Brendan K.; Kuhn, Madison K.; Fleeman Bechtel, Rebecca M.; Proctor, Elizabeth A.; Brubaker, Douglas K., <i>Scientific Reports</i>, 2024</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1016/j.celrep.2023.112474'>Vaginal epithelial dysfunction is mediated by the microbiome, metabolome, and mTOR signaling</a>, Berard, Alicia R.; Brubaker, Douglas K.; Birse, Kenzie; Lamont, Alana; Mackelprang, Romel D.; Noël-Romas, Laura; Perner, Michelle; Hou, Xuanlin; Irungu, Elizabeth; Mugo, Nelly; Knodel, Samantha; Muwonge, Timothy R.; Katabira, Elly; Hughes, Sean M.; Levy, Claire; Calienes, Fernanda L.; Lauffenburger, Douglas A.; Baeten, Jared M.; Celum, Connie; Hladik, Florian; Lingappa, Jairam; Burgener, Adam D., <i>Cell Reports</i>, 2023</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1093/bioadv/vbad159'>Enhanced annotation of CD45RA to distinguish T cell subsets in single-cell RNA-seq via machine learning</a>, Ran, Ran; Brubaker, Douglas K, <i>Bioinformatics Advances</i>, 2023</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.18060/26896'>Association Between Intestinal Changes and Systemic Cytokines in Mouse Dysbiosis Models</a>, Jeffries, Alison; Villarreal, Cameron; Brubaker, Douglas; Chan, Deva, <i>Proceedings of IMPRS</i>, 2023</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1371/journal.pone.0267921'>Endogenous production of hyaluronan, PRG4, and cytokines is sensitive to cyclic loading in synoviocytes</a>, Pendyala, Meghana; Woods, Paige S.; Brubaker, Douglas K.; Blaber, Elizabeth A.; Schmidt, Tannin A.; Chan, Deva D., <i>PLOS ONE</i>, 2022</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1101/2022.07.08.499280'>Latent Interacting Variable-Effects Modeling of Gut Microbiome Multi-Omics in Inflammatory Bowel Disease</a>, Munoz, Javier. E.; Brubaker, Douglas. K., <i></i>, 2022</p></li>
+<li class='publication w3-hide'><p><a href='https://hdl.handle.net/1805/31369'>Method Development Involving Modeling Bacterial Metabolite Regulation of Vaginal Epithelial Cell Signaling in Bacterial Vaginosis</a>, Trinh, Alan; Brubaker, Douglas, <i></i>, 2022</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1142/9789811270611_0027'>TRANS-OMIC KNOWLEDGE TRANSFER MODELING INFERS GUT MICROBIOME BIOMARKERS OF ANTI-TNF RESISTANCE IN ULCERATIVE COLITIS</a>, Trinh, Alan; Ran, Ran; Brubaker, Douglas K, <i>Biocomputing 2023</i>, 2022</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1016/j.isci.2021.103406'>Cross-species transcriptomic signatures predict response to MK2 inhibition in mouse models of chronic inflammation</a>, Suarez-Lopez, Lucia; Shui, Bing; Brubaker, Douglas K.; Hill, Marza; Bergendorf, Alexander; Changelian, Paul S.; Laguna, Aisha; Starchenko, Alina; Lauffenburger, Douglas A.; Haigis, Kevin M., <i>iScience</i>, 2021</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.3389/fnins.2021.727784'>Computational Interspecies Translation Between Alzheimer’s Disease Mouse Models and Human Subjects Identifies Innate Immune Complement, TYROBP, and TAM Receptor Agonist Signatures, Distinct From Influences of Aging</a>, Lee, Meelim J.; Wang, Chuangqi; Carroll, Molly J.; Brubaker, Douglas K.; Hyman, Bradley T.; Lauffenburger, Douglas A., <i>Frontiers in Neuroscience</i>, 2021</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1093/intbio/zyab009'>Cell surface integrin α5ß1 clustering negatively regulates receptor tyrosine kinase signaling in colorectal cancer cells via glycogen synthase kinase 3</a>, Starchenko, Alina; Graves-Deal, Ramona; Brubaker, Douglas; Li, Cunxi; Yang, Yuping; Singh, Bhuminder; Coffey, Robert J; Lauffenburger, Douglas A, <i>Integrative Biology</i>, 2021</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1126/scisignal.aay3258'>An interspecies translation model implicates integrin signaling in infliximab-resistant inflammatory bowel disease</a>, Brubaker, Douglas K.; Kumar, Manu P.; Chiswick, Evan L.; Gregg, Cecil; Starchenko, Alina; Vega, Paige N.; Southard-Smith, Austin N.; Simmons, Alan J.; Scoville, Elizabeth A.; Coburn, Lori A.; Wilson, Keith T.; Lau, Ken S.; Lauffenburger, Douglas A., <i>Science Signaling</i>, 2020</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1111/jth.14875'>Coagulopathy signature precedes and predicts severity of end‐organ heat stroke pathology in a mouse model</a>, Proctor, Elizabeth A.; Dineen, Shauna M.; Van Nostrand, Stephen C.; Kuhn, Madison K.; Barrett, Christopher D.; Brubaker, Douglas K.; Yaffe, Michael B.; Lauffenburger, Douglas A.; Leon, Lisa R., <i>Journal of Thrombosis and Haemostasis</i>, 2020</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1128/AAC.01404-19'><i>Clostridioides difficile</i> -Associated Antibiotics Alter Human Mucosal Barrier Functions by Microbiome-Independent Mechanisms</a>, Kester, Jemila C.; Brubaker, Douglas K.; Velazquez, Jason; Wright, Charles; Lauffenburger, Douglas A.; Griffith, Linda G., <i>Antimicrobial Agents and Chemotherapy</i>, 2020</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1126/science.aay8086'>Translating preclinical models to humans</a>, Brubaker, Douglas K.; Lauffenburger, Douglas A., <i>Science</i>, 2020</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1016/j.cels.2019.07.006'>Proteogenomic Network Analysis of Context-Specific KRAS Signaling in Mouse-to-Human Cross-Species Translation</a>, Brubaker, Douglas K.; Paulo, Joao A.; Sheth, Shikha; Poulin, Emily J.; Popow, Olesja; Joughin, Brian A.; Strasser, Samantha Dale; Starchenko, Alina; Gygi, Steven P.; Lauffenburger, Douglas A.; Haigis, Kevin M., <i>Cell Systems</i>, 2019</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1093/intbio/zyz025'>Substrate-based kinase activity inference identifies MK2 as driver of colitis</a>, Strasser, Samantha Dale; Ghazi, Phaedra C; Starchenko, Alina; Boukhali, Myriam; Edwards, Amanda; Suarez-Lopez, Lucia; Lyons, Jesse; Changelian, Paul S; Monahan, Joseph B; Jacobsen, Jon; Brubaker, Douglas K; Joughin, Brian A; Yaffe, Michael B; Haas, Wilhelm; Lauffenburger, Douglas A; Haigis, Kevin M, <i>Integrative Biology</i>, 2019</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1158/2159-8290.CD-18-1220'>Tissue-Specific Oncogenic Activity of KRASA146T</a>, Poulin, Emily J.; Bera, Asim K.; Lu, Jia; Lin, Yi-Jang; Strasser, Samantha Dale; Paulo, Joao A.; Huang, Tannie Q.; Morales, Carolina; Yan, Wei; Cook, Joshua; Nowak, Jonathan A.; Brubaker, Douglas K.; Joughin, Brian A.; Johnson, Christian W.; DeStefanis, Rebecca A.; Ghazi, Phaedra C.; Gondi, Sudershan; Wales, Thomas E.; Iacob, Roxana E.; Bogdanova, Lana; Gierut, Jessica J.; Li, Yina; Engen, John R.; Perez-Mancera, Pedro A.; Braun, Benjamin S.; Gygi, Steven P.; Lauffenburger, Douglas A.; Westover, Kenneth D.; Haigis, Kevin M., <i>Cancer Discovery</i>, 2019</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1371/journal.pcbi.1006286'>Computational translation of genomic responses from experimental model systems to humans</a>, Brubaker, Douglas K.; Proctor, Elizabeth A.; Haigis, Kevin M.; Lauffenburger, Douglas A., <i>PLOS Computational Biology</i>, 2019</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1093/biolre/ioy040'>Integrated microRNA and mRNA network analysis of the human myometrial transcriptome in the transition from quiescence to labor†,‡</a>, Ackerman, William E; Buhimschi, Irina A; Brubaker, Douglas; Maxwell, Sean; Rood, Kara M; Chance, Mark R; Jing, Hongwu; Mesiano, Sam; Buhimschi, Catalin S, <i>Biology of Reproduction</i>, 2018</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1126/scisignal.aan3580'>Integrated in vivo multiomics analysis identifies p21-activated kinase signaling as a driver of colitis</a>, Lyons, Jesse; Brubaker, Douglas K.; Ghazi, Phaedra C.; Baldwin, Katherine R.; Edwards, Amanda; Boukhali, Myriam; Strasser, Samantha Dale; Suarez-Lopez, Lucia; Lin, Yi-Jang; Yajnik, Vijay; Kissil, Joseph L.; Haas, Wilhelm; Lauffenburger, Douglas A.; Haigis, Kevin M., <i>Science Signaling</i>, 2018</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1142/9789813207813_0038'>FREQUENT SUBGRAPH MINING OF PERSONALIZED SIGNALING PATHWAY NETWORKS GROUPS PATIENTS WITH FREQUENTLY DYSREGULATED DISEASE PATHWAYS AND PREDICTS PROGNOSIS</a>, Durmaz, Arda; Henderson, Tim A. D.; Brubaker, Douglas; Bebek, Gurkan, <i>Biocomputing 2017</i>, 2017</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1093/hmg/ddw325'>Finding lost genes in GWAS via integrative—omics analysis reveals novel sub-networks associated with preterm birth</a>, Brubaker, Douglas; Liu, Yu; Wang, Junye; Tan, Huiqing; Zhang, Ge; Jacobsson, Bo; Muglia, Louis; Mesiano, Sam; Chance, Mark R., <i>Human Molecular Genetics</i>, 2016</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1186/s12918-016-0320-1'>A dynamical systems model of progesterone receptor interactions with inflammation in human parturition</a>, Brubaker, Douglas; Barbaro, Alethea; R. Chance, Mark; Mesiano, Sam, <i>BMC Systems Biology</i>, 2016</p></li>
+<li class='publication w3-hide'><p><a href=''>Computational Investigation of Biological Networks and Progesterone Signaling Dynamics in Preterm Birth</a>, Brubaker, Douglas K.; Barnholtz-Sloan, Jill; Mesiano, Sam; Barbaro, Alethea, <i></i>, 2016</p></li>
+<li class='publication w3-hide'><p><a href='https://doi.org/10.1142/9789814583220_0013'>DRUG INTERVENTION RESPONSE PREDICTIONS WITH PARADIGM (DIRPP) IDENTIFIES DRUG RESISTANT CANCER CELL LINES AND PATHWAY MECHANISMS OF RESISTANCE</a>, Brubaker, Douglas; Difeo, Analisa; Chen, Yanwen; Pearl, Taylor; Zhai, Kaide; Bebek, Gurkan; Chance, Mark; Barnholtz-Sloan, Jill, <i>Biocomputing 2014</i>, 2013</p></li>
+
+<!-- INSERT PUBLICATION HTML ABOVE -->
+
             </ul>
             <div class="w3-bar" id="publications-pagination" id="publication-pagination">
                 <a onclick="prevPage()" class="w3-button" id="publications-prev">&laquo;</a>
                 <a href="#" class="w3-button publications-page-link" publications-page="1">1</a>
                 <a href="#" class="w3-button publications-page-link" publications-page="2">2</a>
+                <a href="#" class="w3-button publications-page-link" publications-page="3">3</a>
+                <a href="#" class="w3-button publications-page-link" publications-page="4">4</a>
+                <a href="#" class="w3-button publications-page-link" publications-page="5">5</a>
+                <a href="#" class="w3-button publications-page-link" publications-page="6">6</a>
                 <a onclick="nextPage()" class="w3-button" id="publications-next">&raquo;</a>
                 <p id="publications-page-numbers"></p>
             </div>
