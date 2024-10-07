@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/w3pro.css" />
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/papaparse.min.js"></script>
     <script src="js/show.js"></script>
     <script src="js/publications.js" async defer></script>
 </head>
@@ -247,6 +246,12 @@
         <!--Publications section-->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px" id="publications">
             <h2 class="w3-wide">Publications</h2>
+            <div class="w3-bar" id="publications-pagination" id="publication-pagination">
+                <a onclick="prevPage()" class="w3-button" id="publications-prev">&laquo;</a>
+                <div class="pagination-links-placeholder"></div>
+                <a onclick="nextPage()" class="w3-button" id="publications-next">&raquo;</a>
+                <!-- <p id="publications-page-numbers"></p> -->
+            </div>
             <ul class="w3-ul w3-left-align" id="publications-container">
 
 <!-- INSERT PUBLICATION HTML BELOW -->
@@ -282,17 +287,12 @@
 <!-- INSERT PUBLICATION HTML ABOVE -->
 
             </ul>
-            <div class="w3-bar" id="publications-pagination" id="publication-pagination">
+            <!-- <div class="w3-bar" id="publications-pagination" id="publication-pagination">
                 <a onclick="prevPage()" class="w3-button" id="publications-prev">&laquo;</a>
-                <a href="#" class="w3-button publications-page-link" publications-page="1">1</a>
-                <a href="#" class="w3-button publications-page-link" publications-page="2">2</a>
-                <a href="#" class="w3-button publications-page-link" publications-page="3">3</a>
-                <a href="#" class="w3-button publications-page-link" publications-page="4">4</a>
-                <a href="#" class="w3-button publications-page-link" publications-page="5">5</a>
-                <a href="#" class="w3-button publications-page-link" publications-page="6">6</a>
+                <div class="pagination-links-placeholder"></div>
                 <a onclick="nextPage()" class="w3-button" id="publications-next">&raquo;</a>
                 <p id="publications-page-numbers"></p>
-            </div>
+            </div> -->
         </div>
 
         <!--Contact section-->
