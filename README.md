@@ -63,4 +63,5 @@
         - https://www.w3schools.com/w3css/w3css_examples.asp#:~:text=Examples%20explained-,W3.CSS%20Pagination,-Basic%20pagination
     - Transclusion
         - https://stackoverflow.com/questions/15583024/how-to-transclude-html-elements-in-a-document
+        - https://www.w3schools.com/tags/tag_template.asp
 - 

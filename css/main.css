@@ -2,6 +2,9 @@
     width: 100% !important;
 }
 
+body, h1,h2,h3,h4,h5,h6
+{font-family: "Raleway", sans-serif}
+
 a {
     color: #9BB7D4;
     /* background-color: #1b1c22 !important;  */
