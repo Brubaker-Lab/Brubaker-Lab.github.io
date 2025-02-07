@@ -2,10 +2,34 @@
     width: 100% !important;
 }
 
-body, h1,h2,h3,h4,h5,h6
-{font-family: "Raleway", sans-serif}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif
+}
 
 a {
     color: #9BB7D4;
     /* background-color: #1b1c22 !important;  */
 }
+
+
+/* Ensure all People cards are of equal heights in their respective containers */
+.w3-row-padding.w3-stretch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.w3-row-padding.w3-stretch>.w3-col {
+    flex: 0 0 auto;
+}
+
+.w3-row-padding.w3-stretch>.w3-col>.w3-card {
+    height: 100%;
+}
+
