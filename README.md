@@ -36,9 +36,8 @@
 & [@Title]
 & "</a>, "
 & [@Author]
-& ", <i>"
-& [@[Publication Title]]
-& "</i>, "
+& ", "
+& IF(NOT(ISBLANK([@[Publication Title]])), "<i>"&[@[Publication Title]]&"</i>, ","")
 & [@[Publication Year]]
 & "</p></li>"
 ```
