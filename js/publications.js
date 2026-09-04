@@ -1,23 +1,23 @@
 //Pagination code adapted from https://www.geeksforgeeks.org/create-a-pagination-using-html-css-and-javascript/
 const publicationsPerPage = 5; // Number of items to show per page 
-const dataContainer = document.getElementById('publications-container');
-const pagination = document.getElementById('publications-pagination');
-const prevButton = document.getElementById('publications-prev');
-const nextButton = document.getElementById('publications-next');
-const pageNumbers = document.getElementById('publications-page-numbers');
+const publicationsContainer = document.getElementById('publications-container');
+const publicationsPagination = document.getElementById('publications-pagination');
+const publicationsPrevButton = document.getElementById('publications-prev');
+const publicationsNextButton = document.getElementById('publications-next');
+const publicationsPageNumbers = document.getElementById('publications-page-numbers');
 
 const publications =
-    Array.from(dataContainer.getElementsByClassName('publication'));
+    Array.from(publicationsContainer.getElementsByClassName('publication'));
 
 // Calculate the total number of pages 
-const totalPages = Math.ceil(publications.length / publicationsPerPage);
-let currentPage = 1;
+const publicationsTotalPages = Math.ceil(publications.length / publicationsPerPage);
+let publicationsCurrentPage = 1;
 
 
 // Create page links based on the total number of pages
-const pageLinks = [];
+const publicationsPageLinks = [];
 
-for (let p = 0; p < totalPages; p++){
+for (let p = 0; p < publicationsTotalPages; p++){
     const pageLink = document.createElement("a");
 
     pageLink.setAttribute("href", "#");
@@ -28,16 +28,16 @@ for (let p = 0; p < totalPages; p++){
 
     pageLink.appendChild(linkText);
 
-    pageLinks.push(pageLink);
+    publicationsPageLinks.push(pageLink);
 }
 
 // Insert the page links
-const paginationDivs = document.getElementsByClassName("pagination-links-placeholder");
-Array.from(paginationDivs).forEach((div) => {div.replaceWith(...pageLinks)
+const publicationsPaginationDivs = document.getElementsByClassName("publications-pagination-links-placeholder");
+Array.from(publicationsPaginationDivs).forEach((div) => {div.replaceWith(...publicationsPageLinks)
 })
 
 // Function to display cards for a specific page 
-function displayPage(page) {
+function displayPublicationsPage(page) {
     const startIndex = (page - 1) * publicationsPerPage;
     const endIndex = startIndex + publicationsPerPage;
     publications.forEach((publication, index) => {
@@ -52,14 +52,14 @@ function displayPage(page) {
 }
 
 // Function to update pagination buttons and page numbers 
-function updatePagination() {
-    // pageNumbers.textContent =
-    //     `Page ${currentPage} of ${totalPages}`;
+function updatePublicationsPagination() {
+    // publicationsPageNumbers.textContent =
+    //     `Page ${publicationsCurrentPage} of ${publicationsTotalPages}`;
 
-    pageLinks.forEach((link) => {
+    publicationsPageLinks.forEach((link) => {
         const page = parseInt(link.getAttribute('publications-page'));
             
-        if(page === currentPage) {
+        if(page === publicationsCurrentPage) {
             link.className += " w3-theme-light";
         } else {
             link.className = link.className.replace(" w3-theme-light","");
@@ -67,35 +67,35 @@ function updatePagination() {
     });
 }
 
-function prevPage() {
-    if (currentPage > 1) {
-        currentPage--;
-        displayPage(currentPage);
-        updatePagination();
+function prevPublicationsPage() {
+    if (publicationsCurrentPage > 1) {
+        publicationsCurrentPage--;
+        displayPublicationsPage(publicationsCurrentPage);
+        updatePublicationsPagination();
     }
 }
 
-function nextPage() {
-    if (currentPage < totalPages) {
-        currentPage++;
-        displayPage(currentPage);
-        updatePagination();
+function nextPublicationsPage() {
+    if (publicationsCurrentPage < publicationsTotalPages) {
+        publicationsCurrentPage++;
+        displayPublicationsPage(publicationsCurrentPage);
+        updatePublicationsPagination();
     }
 }
 
 // Event listener for page number buttons 
-pageLinks.forEach((link) => {
+publicationsPageLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         const page = parseInt(link.getAttribute('publications-page'));
-        if (page !== currentPage) {
-            currentPage = page;
-            displayPage(currentPage);
-            updatePagination();
+        if (page !== publicationsCurrentPage) {
+            publicationsCurrentPage = page;
+            displayPublicationsPage(publicationsCurrentPage);
+            updatePublicationsPagination();
         }
     });
 });
 
 // Initial page load 
-displayPage(currentPage);
-updatePagination();
+displayPublicationsPage(publicationsCurrentPage);
+updatePublicationsPagination();
