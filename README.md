@@ -15,6 +15,7 @@
 - `js/` - Custom javascript files.
     - `show.js` - Function for revealing hidden children (ie mobile navigation)
     - `publications.js` - Scripts to handle pagination of publications.
+    - `news.js` - Scripts to handle pagination of news.
 
 ## Preparing Publications
 
@@ -53,6 +54,16 @@
 ### Possible Solution
 
 - Export HTML directly from Zotero with "Create Bibliography From Collection" with "American Medical Association 11th edition" formatting, then transclude it into `index.html` when the page loads.
+
+## Preparing News
+
+News items are placed inside `<ul id="news-container">` in `index.html`. Each news item should have the `news-item` and `w3-hide` classes (the pagination script manages showing/hiding items per page).
+
+Example format:
+
+```html
+<li class='news-item w3-hide'><p><strong>YYYY-MM-DD</strong>: Description of the news item here.</p></li>
+```
 
 ## References
 

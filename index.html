@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="js/show.js" defer></script>
     <script src="js/publications.js" defer></script>
+    <script src="js/news.js" defer></script>
     <script src="https://kit.fontawesome.com/33783f39bf.js" crossorigin="anonymous"></script>
     <noscript>
         <style>
@@ -42,6 +43,7 @@ NAVIGATION
             <a href="#" class="w3-bar-item w3-button">The Brubaker Lab</a>
             <a href="#people" class="w3-bar-item w3-button w3-hide-small">People</a>
             <a href="#publications" class="w3-bar-item w3-button w3-hide-small">Publications</a>
+            <a href="#news" class="w3-bar-item w3-button w3-hide-small">News</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
                 onclick="show('mobile-nav')" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">&#9776;</a>
@@ -50,6 +52,7 @@ NAVIGATION
         <div id="mobile-nav" class="w3-bar-block w3-theme-light w3-hide w3-hide-large w3-hide-medium">
             <a href="#people" class="w3-bar-item w3-button">People</a>
             <a href="#publications" class="w3-bar-item w3-button">Publications</a>
+            <a href="#news" class="w3-bar-item w3-button">News</a>
             <a href="#contact" class="w3-bar-item w3-button">Contact</a>
         </div>
     </nav>
@@ -681,9 +684,10 @@ ALUMNI
             </div>
 
             <div class="w3-bar" id="publications-pagination">
-                <a onclick="prevPage()" class="w3-button" id="publications-prev" aria-label="Previous publications page">&laquo;</a>
-                <div class="pagination-links-placeholder"></div>
-                <a onclick="nextPage()" class="w3-button" id="publications-next" aria-label="Next publications page">&raquo;</a>
+                <a onclick="prevPublicationsPage()" class="w3-button" id="publications-prev">&laquo;</a>
+                <div class="publications-pagination-links-placeholder"></div>
+                <a onclick="nextPublicationsPage()" class="w3-button" id="publications-next">&raquo;</a>
+                <!-- <p id="publications-page-numbers"></p> -->
             </div>
 
             <ul class="w3-ul w3-left-align" id="publications-container">
@@ -771,6 +775,55 @@ SEE README FOR INSTRUCTIONS
                 <a onclick="nextPage()" class="w3-button" id="publications-next">&raquo;</a>
                 <p id="publications-page-numbers"></p>
             </div> -->
+        </div>
+
+<!--
+***************************************************************
+NEWS
+***************************************************************
+-->        
+
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px" id="news">
+            <h2 class="w3-wide">News</h2>
+
+            <div class="w3-bar" id="news-pagination">
+                <a onclick="prevNewsPage()" class="w3-button" id="news-prev">&laquo;</a>
+                <div class="news-pagination-links-placeholder"></div>
+                <a onclick="nextNewsPage()" class="w3-button" id="news-next">&raquo;</a>
+            </div>
+
+            <ul class="w3-ul w3-left-align" id="news-container">
+
+<!-- 
+***************************************************************
+INSERT NEWS HTML BELOW
+FORMAT: <li class='news-item w3-hide'><p><strong>YYYY-MM-DD</strong>: News text here</p></li>
+SEE README FOR INSTRUCTIONS
+***************************************************************
+-->
+
+<li class='news-item w3-hide'><p><strong>2026-09-08</strong>: Pacific Symposium for Biocomputing invites Dali for a presentation</p></li>
+<li class='news-item w3-hide'><p><strong>2026-09-02</strong>: Erin and Sophie join the lab</p></li>
+<li class='news-item w3-hide'><p><strong>2026-09-01</strong>: Biomedical Engineering Society invites Alex for a podium presentation and Rachel and Dali for poster presentations</p></li>
+<li class='news-item w3-hide'><p><strong>2026-08-01</strong>: The lab moves to the Department of Biomedical Engineering </p></li>
+<li class='news-item w3-hide'><p><strong>2026-07-30</strong>: Sophia presents her summer research at Intersections Poster Symposium</p></li>
+<li class='news-item w3-hide'><p><strong>2026-07-28</strong>: Rachel passes her qualifying exam</p></li>
+<li class='news-item w3-hide'><p><strong>2026-06-25</strong>: Alex presents at the Barcelona Debates on the Human Microbiome</p></li>
+<li class='news-item w3-hide'><p><strong>2026-06-17</strong>: Alex passes his qualifying exam</p></li>
+<li class='news-item w3-hide'><p><strong>2026-05-17</strong>: Sophia joins the lab</p></li>
+<li class='news-item w3-hide'><p><strong>2026-05-17</strong>: Ray attends and Doug presents at the Workshop on Computational Techniques and Resources for Effective Translational Research in Alzheimer's Disease hosted by The Jackson Laboratory</p></li>
+<li class='news-item w3-hide'><p><strong>2025-05-13</strong>: Dali passes her qualifying exam</p></li>
+<li class='news-item w3-hide'><p><strong>2024-12-16</strong>: Lex passes her qualifying exam</p></li>
+<li class='news-item w3-hide'><p><strong>2023-03-29</strong>: Lex receives the Society for Reproductive Investigation Bayer President's Presenters Award</p></li>
+
+<!--
+***************************************************************
+INSERT NEWS HTML ABOVE
+SEE README FOR INSTRUCTIONS
+***************************************************************
+-->
+
+            </ul>
         </div>
 
 <!--
