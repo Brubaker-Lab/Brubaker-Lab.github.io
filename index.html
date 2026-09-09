@@ -21,9 +21,16 @@
     <script src="js/publications.js" defer></script>
     <script src="js/news.js" defer></script>
     <script src="https://kit.fontawesome.com/33783f39bf.js" crossorigin="anonymous"></script>
+    <noscript>
+        <style>
+            .publication { display: block !important; }
+            #publications-pagination { display: none !important; }
+        </style>
+    </noscript>
 </head>
 
 <body class="w3-theme-d3">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!--
 ***************************************************************
@@ -31,7 +38,7 @@ NAVIGATION
 ***************************************************************
 -->    
 
-    <div class="w3-top">
+    <nav class="w3-top" aria-label="Main Navigation">
         <div class="w3-bar w3-theme-dark">
             <a href="#" class="w3-bar-item w3-button">The Brubaker Lab</a>
             <a href="#people" class="w3-bar-item w3-button w3-hide-small">People</a>
@@ -39,7 +46,7 @@ NAVIGATION
             <a href="#news" class="w3-bar-item w3-button w3-hide-small">News</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                onclick="show('mobile-nav')">&#9776;</a>
+                onclick="show('mobile-nav')" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">&#9776;</a>
         </div>
         <!--Mobile nav dropdown items for small screens-->
         <div id="mobile-nav" class="w3-bar-block w3-theme-light w3-hide w3-hide-large w3-hide-medium">
@@ -48,7 +55,7 @@ NAVIGATION
             <a href="#news" class="w3-bar-item w3-button">News</a>
             <a href="#contact" class="w3-bar-item w3-button">Contact</a>
         </div>
-    </div>
+    </nav>
 
 <!--
 ***************************************************************
@@ -56,7 +63,7 @@ CONTENT
 ***************************************************************
 -->
 
-    <div class="w3-content">
+    <main class="w3-content" id="main-content">
         
 <!--
 ***************************************************************
@@ -82,19 +89,19 @@ HOME
             </p>
             <div class="w3-row-padding w3-padding-32">
                 <div class="w3-quarter w3-padding">
-                    <i class="fa-solid fa-prescription-bottle-medical w3-xxlarge"></i>
+                    <i class="fa-solid fa-prescription-bottle-medical w3-xxlarge" aria-hidden="true"></i>
                     <p>Microbiome Pharmacology</p>
                 </div>
                 <div class="w3-quarter w3-padding">
-                    <i class="fa-solid fa-computer w3-xxlarge"></i>
+                    <i class="fa-solid fa-computer w3-xxlarge" aria-hidden="true"></i>
                     <p>Computational Preclinical Translation Modeling</p>
                 </div>
                 <div class="w3-quarter w3-padding">
-                    <i class="fa-solid fa-circle-nodes w3-xxlarge"></i>
+                    <i class="fa-solid fa-circle-nodes w3-xxlarge" aria-hidden="true"></i>
                     <p>Systems Immunology</p>
                 </div>
                 <div class="w3-quarter w3-padding">
-                    <i class="fa-solid fa-person-half-dress w3-xxlarge"></i>
+                    <i class="fa-solid fa-person-half-dress w3-xxlarge" aria-hidden="true"></i>
                     <p>Women's Health And Sex Differences</p>
                 </div>
             </div>
@@ -112,9 +119,9 @@ PEOPLE
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px" id="people">
             <h2 class="w3-wide w3-padding-16">People</h2>
             <!--Doug's Information-->
-            <img class="w3-image w3-hide-small w3-card" style="width:33%" src="img/portraits/Brubaker, Douglas.jpg">
+            <img class="w3-image w3-hide-small w3-card" style="width:33%" src="img/portraits/Brubaker, Douglas.jpg" alt="Portrait of Dr. Douglas Brubaker">
             <img class="w3-image w3-hide-medium w3-hide-large w3-card" style="width:66%"
-                src="img/portraits/Brubaker, Douglas.jpg">
+                src="img/portraits/Brubaker, Douglas.jpg" alt="Portrait of Dr. Douglas Brubaker">
             <h3>Douglas Brubaker, Ph.D.</h3>
             <p class="w3-opacity">
                 Assistant Professor of Biomedical Engineering, School of Medicine, Case Western Reserve University
@@ -123,20 +130,20 @@ PEOPLE
             <!-- Contact icons-->
             <div class="w3-bar">
                 <!-- Google Scholar -->
-                <a class="w3-button" href="https://scholar.google.com/citations?user=SlliJnUAAAAJ&hl=en&oi=ao">
-                    <i class="fa-brands fa-google-scholar"></i>
+                <a class="w3-button" href="https://scholar.google.com/citations?user=SlliJnUAAAAJ&hl=en&oi=ao" aria-label="Douglas Brubaker Google Scholar">
+                    <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                 </a>
                 <!-- LinkedIn -->
-                <a class="w3-button" href="https://www.linkedin.com/in/douglas-brubaker-11b167161/">
-                    <i class="fa-brands fa-linkedin"></i>
+                <a class="w3-button" href="https://www.linkedin.com/in/douglas-brubaker-11b167161/" aria-label="Douglas Brubaker LinkedIn">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                 </a>
                 <!-- OrcID -->
-                <a class="w3-button" href="https://orcid.org/0000-0001-5083-0334">
-                    <i class="fa-brands fa-orcid"></i>
+                <a class="w3-button" href="https://orcid.org/0000-0001-5083-0334" aria-label="Douglas Brubaker ORCID">
+                    <i class="fa-brands fa-orcid" aria-hidden="true"></i>
                 </a>
                 <!-- Email -->
-                <a class="w3-button" href="mailto:douglas.brubaker@case.edu">
-                    <i class="fa-solid fa-envelope"></i>
+                <a class="w3-button" href="mailto:douglas.brubaker@case.edu" aria-label="Email Douglas Brubaker">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                 </a>
             </div>
 
@@ -182,7 +189,7 @@ STAFF
             <div class="w3-row-padding w3-stretch" id="staff">
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" alt="Raymond Krajci" src="img/portraits/Krajci, Raymond.jpg">
+                        <img class="w3-image" alt="Portrait of Raymond Krajci" src="img/portraits/Krajci, Raymond.jpg">
                         <div class="w3-container">
                             <h4>Raymond Krajci</h4>
                             <p class="w3-opacity">Data and Operations Engineer</p>
@@ -190,20 +197,20 @@ STAFF
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/raykrajci">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/raykrajci" aria-label="Raymond Krajci GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/raymond-krajci-a45499210/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/raymond-krajci-a45499210/" aria-label="Raymond Krajci LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0000-0002-4512-5363">
-                                <i class="fa-brands fa-orcid"></i>
+                            <a class="w3-button" href="https://orcid.org/0000-0002-4512-5363" aria-label="Raymond Krajci ORCID">
+                                <i class="fa-brands fa-orcid" aria-hidden="true"></i>
                             </a>
                             <!-- Email -->
-                            <a class="w3-button" href="mailto:rdk54@case.edu">
-                                <i class="fa-solid fa-envelope"></i>
+                            <a class="w3-button" href="mailto:rdk54@case.edu" aria-label="Email Raymond Krajci">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -220,121 +227,121 @@ GRADUATE STUDENTS
             <div class="w3-row-padding w3-stretch">
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Bergendorf, Alexander.jpg">
+                        <img class="w3-image" src="img/portraits/Bergendorf, Alexander.jpg" alt="Portrait of Alexander Bergendorf">
                         <div class="w3-container">
                             <h4>Alexander Bergendorf</h4>
                         </div>
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/abergend">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/abergend" aria-label="Alexander Bergendorf GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- Google Scholar -->
-                            <a class="w3-button" href="https://scholar.google.com/citations?hl=en&user=Sj557LgAAAAJ">
-                                <i class="fa-brands fa-google-scholar"></i>
+                            <a class="w3-button" href="https://scholar.google.com/citations?hl=en&user=Sj557LgAAAAJ" aria-label="Alexander Bergendorf Google Scholar">
+                                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/alexander-bergendorf/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/alexander-bergendorf/" aria-label="Alexander Bergendorf LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0009-0007-2424-8448"><i
-                                    class="fa-brands fa-orcid"></i></a>
+                            <a class="w3-button" href="https://orcid.org/0009-0007-2424-8448" aria-label="Alexander Bergendorf ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i></a>
                             <!-- Email -->
-                            <a class="w3-button" href="mailto:axb1812@case.edu">
-                                <i class="fa-solid fa-envelope"></i>
+                            <a class="w3-button" href="mailto:axb1812@case.edu" aria-label="Email Alexander Bergendorf">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Heath, Alexis.jpg">
+                        <img class="w3-image" src="img/portraits/Heath, Alexis.jpg" alt="Portrait of Alexis Heath">
                         <div class="w3-container">
                             <h4>Alexis Heath</h4>
                         </div>
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/aeheath23">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/aeheath23" aria-label="Alexis Heath GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- Google Scholar -->
-                            <a class="w3-button" href="https://scholar.google.com/citations?hl=en&user=RJIRavwAAAAJ">
-                                <i class="fa-brands fa-google-scholar"></i>
+                            <a class="w3-button" href="https://scholar.google.com/citations?hl=en&user=RJIRavwAAAAJ" aria-label="Alexis Heath Google Scholar">
+                                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/alexis-heath-95407122b/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/alexis-heath-95407122b/" aria-label="Alexis Heath LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0009-0002-3969-4938"><i
-                                    class="fa-brands fa-orcid"></i></a>
+                            <a class="w3-button" href="https://orcid.org/0009-0002-3969-4938" aria-label="Alexis Heath ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i></a>
                             <!-- Email -->
-                            <a class="w3-button" href="mailto:aeh181@case.edu">
-                                <i class="fa-solid fa-envelope"></i>
+                            <a class="w3-button" href="mailto:aeh181@case.edu" aria-label="Email Alexis Heath">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Liu, Rachel.jpg">
+                        <img class="w3-image" src="img/portraits/Liu, Rachel.jpg" alt="Portrait of Rachel Liu">
                         <div class="w3-container">
                             <h4>Rachel Liu, Pharm.D.</h4>
                         </div>
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/rachel-xyl-yeh">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/rachel-xyl-yeh" aria-label="Rachel Liu GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- Google Scholar -->
-                            <a class="w3-button" href="https://scholar.google.com/citations?hl=en&user=REilRicAAAAJ">
-                                <i class="fa-brands fa-google-scholar"></i>
+                            <a class="w3-button" href="https://scholar.google.com/citations?hl=en&user=REilRicAAAAJ" aria-label="Rachel Liu Google Scholar">
+                                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/rachel-liu-pharmd-93063251/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/rachel-liu-pharmd-93063251/" aria-label="Rachel Liu LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0009-0003-0921-0258"><i
-                                    class="fa-brands fa-orcid"></i></a>
+                            <a class="w3-button" href="https://orcid.org/0009-0003-0921-0258" aria-label="Rachel Liu ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i></a>
                             <!-- Email -->
-                            <a class="w3-button" href="mailto:xxl1437@case.edu">
-                                <i class="fa-solid fa-envelope"></i>
+                            <a class="w3-button" href="mailto:xxl1437@case.edu" aria-label="Email Rachel Liu">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Nemecio, Dali.jpg">
+                        <img class="w3-image" src="img/portraits/Nemecio, Dali.jpg" alt="Portrait of Dalí Nemecio">
                         <div class="w3-container">
                             <h4>Dalí Nemecio</h4>
                         </div>
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/dalinemecio">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/dalinemecio" aria-label="Dalí Nemecio GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- Google Scholar -->
                             <a class="w3-button"
-                                href="https://scholar.google.com/citations?user=zFlGzDgAAAAJ&hl=en&oi=ao">
-                                <i class="fa-brands fa-google-scholar"></i>
+                                href="https://scholar.google.com/citations?user=zFlGzDgAAAAJ&hl=en&oi=ao" aria-label="Dalí Nemecio Google Scholar">
+                                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/dalixitlalinemecio/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/dalixitlalinemecio/" aria-label="Dalí Nemecio LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0000-0002-2263-3904"><i
-                                    class="fa-brands fa-orcid"></i></a>
+                            <a class="w3-button" href="https://orcid.org/0000-0002-2263-3904" aria-label="Dalí Nemecio ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i></a>
                             <!-- Email -->
-                            <a class="w3-button" href="mailto:dxn254@case.edu">
-                                <i class="fa-solid fa-envelope"></i>
+                            <a class="w3-button" href="mailto:dxn254@case.edu" aria-label="Email Dalí Nemecio">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -366,18 +373,27 @@ UNDERGRADUATES
 
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Williams, Grant.jpg">
+                        <img class="w3-image" src="img/portraits/Scherer, Sophie.jpg" alt="Portrait of Sophie Scherer">
                         <div class="w3-container">
-                            <h4>Grant Williams</h4>
+                            <h4>Sophie Scherer</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w3-col m3 s6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img class="w3-image" src="img/portraits/Wang, Sophia.jpg" alt="Portrait of Sophia Wang">
+                        <div class="w3-container">
+                            <h4>Sophia Wang</h4>
                         </div>
                     </div>
                 </div>
 
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Wang, Sophia.jpg">
+                        <img class="w3-image" src="img/portraits/Williams, Grant.jpg" alt="Portrait of Grant Williams">
                         <div class="w3-container">
-                            <h4>Sophia Wang</h4>
+                            <h4>Grant Williams</h4>
                         </div>
                     </div>
                 </div>
@@ -395,7 +411,7 @@ ALUMNI
             <div class="w3-row-padding w3-stretch">
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Ball, Brendan.jpg">
+                        <img class="w3-image" src="img/portraits/Ball, Brendan.jpg" alt="Portrait of Brendan Ball">
                         <div class="w3-container">
                             <h4>Brendan Ball, Ph.D.</h4>
                             <p class="w3-opacity">Ph.D., Purdue University 2025</p>
@@ -404,28 +420,28 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/bbkazu5">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/bbkazu5" aria-label="Brendan Ball GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- Google Scholar -->
                             <a class="w3-button"
-                                href="https://scholar.google.com/citations?user=7hgp5rUAAAAJ&hl=en&oi=ao">
-                                <i class="fa-brands fa-google-scholar"></i>
+                                href="https://scholar.google.com/citations?user=7hgp5rUAAAAJ&hl=en&oi=ao" aria-label="Brendan Ball Google Scholar">
+                                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/brendanball/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/brendanball/" aria-label="Brendan Ball LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0000-0002-3199-519X"><i
-                                    class="fa-brands fa-orcid"></i>
+                            <a class="w3-button" href="https://orcid.org/0000-0002-3199-519X" aria-label="Brendan Ball ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i>
                                 </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Bushok, Reagan.jpg">
+                        <img class="w3-image" src="img/portraits/Bushok, Reagan.jpg" alt="Portrait of Reagan Bushok">
                         <div class="w3-container">
                             <h4>Reagan Bushok</h4>
                             <p class="w3-opacity">B.S., Purdue University 2024</p>
@@ -434,15 +450,15 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/reagan-bushok-940922197/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/reagan-bushok-940922197/" aria-label="Reagan Bushok LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Federle, Maya.jpg">
+                        <img class="w3-image" src="img/portraits/Federle, Maya.jpg" alt="Portrait of Maya Frost">
                         <div class="w3-container">
                             <h4>Maya Frost</h4>
                             <p class="w3-opacity">B.S., Purdue University 2024</p>
@@ -452,15 +468,15 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/maya-federle/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/maya-federle/" aria-label="Maya Frost LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Jena, Smrutiti.jpg">
+                        <img class="w3-image" src="img/portraits/Jena, Smrutiti.jpg" alt="Portrait of Smrutiti Jena">
                         <div class="w3-container">
                             <h4>Smrutiti Jena, Ph.D.</h4>
                             <p class="w3-opacity">Post Doctoral Research Assistant</p>
@@ -468,19 +484,19 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- Google Scholar -->
-                            <a class="w3-button" href="https://scholar.google.com/citations?hl=en&user=_Wd3LDIAAAAJ">
-                                <i class="fa-brands fa-google-scholar"></i>
+                            <a class="w3-button" href="https://scholar.google.com/citations?hl=en&user=_Wd3LDIAAAAJ" aria-label="Smrutiti Jena Google Scholar">
+                                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/smrutiti-jena-518956336/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/smrutiti-jena-518956336/" aria-label="Smrutiti Jena LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Lawore, Damilola.jpg">
+                        <img class="w3-image" src="img/portraits/Lawore, Damilola.jpg" alt="Portrait of Damilola Lawore">
                         <div class="w3-container">
                             <h4>Damilola Lawore, Ph.D.</h4>
                             <p class="w3-opacity">Ph.D., Purdue University 2025</p>
@@ -488,22 +504,22 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/DamilolaJ">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/DamilolaJ" aria-label="Damilola Lawore GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/damilola-lawore/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/damilola-lawore/" aria-label="Damilola Lawore LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0009-0008-2171-6565"><i
-                                    class="fa-brands fa-orcid"></i></a>
+                            <a class="w3-button" href="https://orcid.org/0009-0008-2171-6565" aria-label="Damilola Lawore ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Mukherjee, Asmi.jpg">
+                        <img class="w3-image" src="img/portraits/Mukherjee, Asmi.jpg" alt="Portrait of Asmi Mukherjee">
                         <div class="w3-container">
                             <h4>Asmi Mukherjee</h4>
                             <p class="w3-opacity">B.S., Purdue University 2025</p>
@@ -512,19 +528,19 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/asmi-m">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/asmi-m" aria-label="Asmi Mukherjee GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/asmi-mukherjee/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/asmi-mukherjee/" aria-label="Asmi Mukherjee LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Munoz Briones, Javier.jpg">
+                        <img class="w3-image" src="img/portraits/Munoz Briones, Javier.jpg" alt="Portrait of Javier Muñoz Briones">
                         <div class="w3-container">
                             <h4>Javier Muñoz Briones, Ph.D.</h4>
                             <p class="w3-opacity">Ph.D., Purdue University 2024</p>
@@ -534,18 +550,18 @@ ALUMNI
                         <div class="w3-bar">
                             <!-- LinkedIn -->
                             <a class="w3-button"
-                                href="https://www.linkedin.com/in/javier-mu%C3%B1oz-briones-177135162/">
-                                <i class="fa-brands fa-linkedin"></i>
+                                href="https://www.linkedin.com/in/javier-mu%C3%B1oz-briones-177135162/" aria-label="Javier Muñoz Briones LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0009-0003-1129-8105"><i
-                                    class="fa-brands fa-orcid"></i></a>
+                            <a class="w3-button" href="https://orcid.org/0009-0003-1129-8105" aria-label="Javier Muñoz Briones ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Park, Jee Hyun.jpg">
+                        <img class="w3-image" src="img/portraits/Park, Jee Hyun.jpg" alt="Portrait of Jee Hyun Park">
                         <div class="w3-container">
                             <h4>Jee Hyun Park, Ph.D.</h4>
                             <p class="w3-opacity">Ph.D., Purdue University 2025</p>
@@ -554,22 +570,22 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/jeehyunp1">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/jeehyunp1" aria-label="Jee Hyun Park GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/jee-hyun-park-purdue-bme/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/jee-hyun-park-purdue-bme/" aria-label="Jee Hyun Park LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0000-0003-4898-227X"><i
-                                    class="fa-brands fa-orcid"></i></a>
+                            <a class="w3-button" href="https://orcid.org/0000-0003-4898-227X" aria-label="Jee Hyun Park ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Ran, Ran.jpg">
+                        <img class="w3-image" src="img/portraits/Ran, Ran.jpg" alt="Portrait of Ran Ran">
                         <div class="w3-container">
                             <h4>Ran Ran</h4>
                             <p class="w3-opacity">Ph.D., Case Western Reserve University 2025</p>
@@ -578,22 +594,22 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- GitHub -->
-                            <a class="w3-button" href="https://github.com/Ran-x2">
-                                <i class="fa-brands fa-github"></i>
+                            <a class="w3-button" href="https://github.com/Ran-x2" aria-label="Ran Ran GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/ranx2/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/ranx2/" aria-label="Ran Ran LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!-- ORCiD -->
-                            <a class="w3-button" href="https://orcid.org/0000-0002-2895-9884"><i
-                                    class="fa-brands fa-orcid"></i></a>
+                            <a class="w3-button" href="https://orcid.org/0000-0002-2895-9884" aria-label="Ran Ran ORCID"><i
+                                    class="fa-brands fa-orcid" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Render, Nina.jpg">
+                        <img class="w3-image" src="img/portraits/Render, Nina.jpg" alt="Portrait of Nina Render">
                         <div class="w3-container">
                             <h4>Nina Render</h4>
                             <p class="w3-opacity">M.S., Purdue University 2024</p>
@@ -602,15 +618,15 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/nina-render/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/nina-render/" aria-label="Nina Render LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Treichel, Alison.jpg">
+                        <img class="w3-image" src="img/portraits/Treichel, Alison.jpg" alt="Portrait of Alison Treichel">
                         <div class="w3-container">
                             <h4>Alison Treichel, M.D.</h4>
                             <p class="w3-opacity">Dermatology Resident, University Hospitals</p>
@@ -619,15 +635,15 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/alison-treichel-638536121/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/alison-treichel-638536121/" aria-label="Alison Treichel LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="w3-col m3 s6 w3-margin-bottom">
                     <div class="w3-card">
-                        <img class="w3-image" src="img/portraits/Trinh, Alan.jpg">
+                        <img class="w3-image" src="img/portraits/Trinh, Alan.jpg" alt="Portrait of Alan Trinh">
                         <div class="w3-container">
                             <h4>Alan Trinh, M.D.</h4>
                             <p class="w3-opacity">M.D., Indiana University School of Medicine 2024</p>
@@ -636,8 +652,8 @@ ALUMNI
                         <!-- Contact icons-->
                         <div class="w3-bar">
                             <!-- LinkedIn -->
-                            <a class="w3-button" href="https://www.linkedin.com/in/alan-trinh-md-16a20b31a/">
-                                <i class="fa-brands fa-linkedin"></i>
+                            <a class="w3-button" href="https://www.linkedin.com/in/alan-trinh-md-16a20b31a/" aria-label="Alan Trinh LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -653,15 +669,15 @@ ALUMNI
                 <!-- Contact icons-->
                 <div class="w3-bar">
                     <!-- Google Scholar -->
-                    <a class="w3-button" href="https://scholar.google.com/citations?user=SlliJnUAAAAJ&hl=en&oi=ao">
-                        <i class="fa-brands fa-google-scholar"></i>
+                    <a class="w3-button" href="https://scholar.google.com/citations?user=SlliJnUAAAAJ&hl=en&oi=ao" aria-label="Lab Google Scholar profile">
+                        <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                     </a>
                     <!-- OrcID -->
-                    <a class="w3-button" href="https://orcid.org/0000-0001-5083-0334">
-                        <i class="fa-brands fa-orcid"></i>
+                    <a class="w3-button" href="https://orcid.org/0000-0001-5083-0334" aria-label="Lab ORCID profile">
+                        <i class="fa-brands fa-orcid" aria-hidden="true"></i>
                     </a>
                     <!-- BibTex -->
-                    <a class="w3-button" href="/files/Brubaker Lab Publications.bib" download>
+                    <a class="w3-button" href="/files/Brubaker Lab Publications.bib" download aria-label="Download BibTeX citations">
                         BibTex
                     </a>
                 </div>
@@ -827,7 +843,7 @@ CONTACT
                 <a href="mailto:douglas.brubaker@case.edu">douglas.brubaker@case.edu</a>
             </p>
         </div>
-    </div>
+    </main>
     <div class="w3-fo"></div>
 </body>
 
